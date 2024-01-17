@@ -9,7 +9,7 @@
             <W_Title :title="$t('section.contacts')" />
             <div class="contacts__widgets widgets">
                 <W_Link title="tel" class="cw-1" />
-                <W_Link title="mail" class="cw-2" />
+                <W_Mail class="cw-2" />
                 <W_Link title="tg" class="cw-3" />
                 <W_Map class="cw-4" />
                 <W_Link title="ig" class="cw-5" />
@@ -80,6 +80,7 @@
     _Title - section title
     _Func - widget with functions // e.g. switch theme/language
     _Link - widget with link
+    _Mail - widget for mails
     _Map - map widget
     _Media - media widget // e.g. images, gif, video
     _Notes - notes widget
@@ -89,6 +90,7 @@ import W_Title from '@/components/widgets/W_Title.vue'
 
 import W_Func from '@/components/widgets/W_Func.vue'
 import W_Link from '@/components/widgets/W_Link.vue'
+import W_Mail from './widgets/W_Mail.vue'
 import W_Map from '@/components/widgets/W_Map.vue'
 import W_Media from '@/components/widgets/W_Media.vue'
 import W_Notes from '@/components/widgets/W_Notes.vue'
