@@ -1,5 +1,5 @@
 <template>
-    <div class="widget media" :style="{ backgroundImage: `url(@/assets/images/${[title]}.png)` }">
+    <div class="widget media" :style="{ backgroundImage: image }">
         <div class="caption">
             <p>{{ $t(`media.${[title]}.caption`) }}</p>
         </div>
@@ -10,6 +10,8 @@
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n({useScope: 'global'});
+
+const image = new URL(`/src/assets/images/${[title]}.png`);
 
 defineProps({
     title: String
