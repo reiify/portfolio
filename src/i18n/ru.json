@@ -37,8 +37,8 @@
         "mail": {
             "name": "Почта",
             "icon": "https://api.iconify.design/basil:envelope-solid.svg",
-            "href": "mailto:shadowjexon＠ya.ru",
-            "caption": "shadowjexon＠ya.ru",
+            "href": "mailto:shadowjexon&#64;ya.ru",
+            "caption": "shadowjexon&#64;ya.ru",
             "content": ""
         },
         "bento": {
