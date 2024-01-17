@@ -1,5 +1,8 @@
 <template>
-    <div class="widget media" :style="{ backgroundImage: $t(`media.${[title]}.media`) }">
+    <div class="widget media">
+        <img src="@/assets/images/anime.png" alt="background image" v-if="[title] == 'anime'">
+        <img src="@/assets/images/game.png" alt="background image" v-if="[title] == 'game'">
+        <img src="@/assets/images/music.png" alt="background image" v-if="[title] == 'music'">
         <div class="caption">
             <p>{{ $t(`media.${[title]}.caption`) }}</p>
         </div>
@@ -24,6 +27,7 @@ defineProps({
     padding: 10px;
     border-radius: 10px;
     background-color: #fff;
+    z-index: 1;
 
     & p {
         color: #000;
@@ -40,6 +44,17 @@ defineProps({
     align-items: flex-end;
     border: 0;
     cursor: auto;
+    position: relative;
+    
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
 }
 .media:hover {
     border: 0;
