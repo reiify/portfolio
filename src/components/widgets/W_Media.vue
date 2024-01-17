@@ -1,5 +1,5 @@
 <template>
-    <div class="widget media" :style="{ backgroundImage: `@/assets/images/${[title]}.png` }">
+    <div class="widget media" :style="{ backgroundImage: $t(`media.${[title]}.media`) }">
         <div class="caption">
             <p>{{ $t(`media.${[title]}.caption`) }}</p>
         </div>
