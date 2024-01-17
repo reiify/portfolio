@@ -1,0 +1,18 @@
+.wrapper {
+    padding: 16px;
+    width: 100%;
+    gap: 40px;
+}
+
+// left
+.about-me {
+    max-width: none !important;
+}
+
+// right
+.socials__widgets {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+.pin {
+    grid-column: 2 / 4;
+}

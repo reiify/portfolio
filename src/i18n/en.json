@@ -1,0 +1,205 @@
+{
+    "user_name": "Abdulatif AHMADOV",
+    "bio": {
+        "1": "I was born in a small town of Karakalpakstan, Uzbekistan, in 2005.",
+        "2": "I am interested in different technologies, I aspire to learn C/C++. I started my way with web development.",
+        "3": "Purposeful, hardworking and quick learner."
+    },
+
+    "links": {
+        "lm": {
+            "name": "Theme",
+            "icon": "https://api.iconify.design/basil:sun-solid.svg",
+            "caption": "Light",
+            "content": ""
+        },
+        "dm": {
+            "name": "Theme",
+            "icon": "https://api.iconify.design/basil:moon-solid.svg",
+            "caption": "Dark",
+            "content": ""
+        },
+
+        "lang": {
+            "name": "Language",
+            "icon": "https://hatscripts.github.io/circle-flags/flags/gb.svg",
+            "caption": "English",
+            "content": ""
+        },
+
+        "tel": {
+            "name": "Telephone",
+            "icon": "https://api.iconify.design/basil:phone-solid.svg",
+            "href": "tel:+998932084562",
+            "caption": "+998 (93) 208-45-62",
+            "content": ""
+        },
+        "mail": {
+            "name": "Mail",
+            "icon": "https://api.iconify.design/basil:envelope-solid.svg",
+            "href": "mailto:shadowjexon@ya.ru",
+            "caption": "shadowjexon@ya.ru",
+            "content": ""
+        },
+        "bento": {
+            "name": "Source of inspiration",
+            "icon": "https://bento.me/favicon.ico",
+            "href": "https://bento.me",
+            "caption": "bento.me",
+            "content": ""
+        },
+        "prototype": {
+            "name": "Prototype in Figma",
+            "icon": "https://static.figma.com/app/icon/1/favicon.svg",
+            "href": "https://www.figma.com/file/kl8MkpQ6AO6muoqcqP325P/Portfolio?type=design&node-id=0%3A1&mode=dev",
+            "caption": "figma.com",
+            "content": ""
+        },
+        "used_framework": {
+            "name": "Written on Vue 3",
+            "icon": "https://vuejs.org/logo.svg",
+            "href": "https://vuejs.org",
+            "caption": "vuejs.org",
+            "content": ""
+        },
+        "localization": {
+            "name": "Localization: i18n",
+            "icon": "https://vue-i18n.intlify.dev/vue-i18n-logo.svg",
+            "href": "https://vue-i18n.intlify.dev/",
+            "caption": "vue-i18n.intlify.dev/",
+            "content": ""
+        },
+
+        "js": {
+            "name": "JavaScript",
+            "icon": "https://developer.mozilla.org/favicon.ico",
+            "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "caption": "developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "content": "https://creatorspace.imgix.net/sites/ogimages/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvbWRuLXNvY2lhbC1zaGFyZS5jZDZjNGE1YS5wbmc=.png?width=600&height=600"
+        },
+        "vue": {
+            "name": "Vue.js",
+            "icon": "https://vuejs.org/logo.svg",
+            "href": "https://vuejs.org",
+            "caption": "vuejs.org",
+            "content": ""
+        },
+        "quasar": {
+            "name": "Quasar",
+            "icon": "https://cdn.quasar.dev/logo-v2/svg/logo.svg",
+            "href": "https://quasar.dev",
+            "caption": "quasar.dev",
+            "content": ""
+        },
+
+        "tg": {
+            "name": "Telegram",
+            "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://t.me&size=40",
+            "href": "https://t.me/kagamirei",
+            "caption": "@kagamirei",
+            "content": ""
+        },
+        "ig": {
+            "name": "Instagram",
+            "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://instagram.com&size=40",
+            "href": "https://instagram.com/rei.ify",
+            "caption": "@rei.ify",
+            "content": ""
+        },
+        "git": {
+            "name": "GitHub",
+            "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://github.com&size=40",
+            "href": "https://github.com/reiify",
+            "caption": "@reiify",
+            "content": ""
+        },
+        "be": {
+            "name": "Behance",
+            "icon": "https://behance.net/favicon.ico",
+            "href": "https://behance.net/kagamirei",
+            "caption": "@kagamirei",
+            "content": ""
+        },
+        "fig": {
+            "name": "Figma",
+            "icon": "https://static.figma.com/app/icon/1/favicon.svg",
+            "href": "https://figma.com/kagamirei",
+            "caption": "@kagamirei",
+            "content": ""
+        },
+        "dri": {
+            "name": "Dribbble",
+            "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://dribbble.com&size=40",
+            "href": "https://dribbble.com/reiify",
+            "caption": "@reiify",
+            "content": ""
+        },
+        "vk": {
+            "name": "VKontakte",
+            "icon": "https://vk.com/favicon.ico",
+            "href": "https://vk.com/kagamirei",
+            "caption": "@kagamirei",
+            "content": ""
+        },
+        "tt": {
+            "name": "Tiktok",
+            "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://tiktok.com&size=40",
+            "href": "https://tiktok.com/rei.ify",
+            "caption": "@rei.ify",
+            "content": ""
+        },
+        "x": {
+            "name": "X",
+            "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://x.com&size=40",
+            "href": "https://x.com/kagamiify",
+            "caption": "@kagamiify",
+            "content": ""
+        },
+        "pin": {
+            "name": "Pinterest",
+            "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://pinterest.jp&size=40",
+            "href": "https://pinterest.jp/reiify",
+            "caption": "@reiify",
+            "content": ""
+        }
+    },
+
+    "section": {
+        "contacts": "Contacts",
+        "my_projects": "My projects",
+        "my_skills": "My skills",
+        "hobbies": "Hobbies",
+        "socials": "I'm on social media",
+        "about_project": "About project"
+    },
+
+    "media": {
+        "anime": {
+            "media": "src/assets/images/anime.png",
+            "caption": "Anime"
+        },
+        "game": {
+            "media": "src/assets/images/game.png",
+            "caption": "Games"
+        },
+        "music": {
+            "media": "src/assets/images/music.png",
+            "caption": "Music"
+        }
+    },
+
+    "notes": {
+        "prog_langs": {
+            "note": "Programming languages",
+            "href": ""
+        },
+        "frameworks": {
+            "note": "Frameworks",
+            "href": ""
+        },
+        "font": {
+            "note": "Roboto",
+            "href": "https://fonts.google.com/specimen/Roboto"
+        }
+    }
+}
