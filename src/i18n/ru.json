@@ -37,7 +37,7 @@
         "mail": {
             "name": "Почта",
             "icon": "https://api.iconify.design/basil:envelope-solid.svg",
-            "href": "mailto:shadowjexon@ya.ru",
+            "href": "mailto:shadowjexon{'@'}ya.ru",
             "caption": "shadowjexon{'@'}ya.ru",
             "content": ""
         },
