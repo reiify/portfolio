@@ -11,7 +11,7 @@ import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n({useScope: 'global'});
 
-const image = new URL(`/src/assets/images/${[title]}.png`);
+const image = new URL(`/src/assets/images/${[title]}.png`, import.meta.url);
 
 defineProps({
     title: String
