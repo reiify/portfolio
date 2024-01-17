@@ -175,15 +175,15 @@
 
     "media": {
         "anime": {
-            "media": "./assets/images/anime.png",
+            "media": "../assets/images/anime.png",
             "caption": "Аниме"
         },
         "game": {
-            "media": "./assets/images/game.png",
+            "media": "../assets/images/game.png",
             "caption": "Игры"
         },
         "music": {
-            "media": "./assets/images/music.png",
+            "media": "../assets/images/music.png",
             "caption": "Музыка"
         }
     },
