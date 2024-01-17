@@ -96,70 +96,70 @@
             "name": "Telegram",
             "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://t.me&size=40",
             "href": "https://t.me/kagamirei",
-            "caption": "@kagamirei",
+            "caption": "kagamirei",
             "content": ""
         },
         "ig": {
             "name": "Instagram",
             "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://instagram.com&size=40",
             "href": "https://instagram.com/rei.ify",
-            "caption": "@rei.ify",
+            "caption": "rei.ify",
             "content": ""
         },
         "git": {
             "name": "GitHub",
             "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://github.com&size=40",
             "href": "https://github.com/reiify",
-            "caption": "@reiify",
+            "caption": "reiify",
             "content": ""
         },
         "be": {
             "name": "Behance",
             "icon": "https://behance.net/favicon.ico",
             "href": "https://behance.net/kagamirei",
-            "caption": "@kagamirei",
+            "caption": "kagamirei",
             "content": ""
         },
         "fig": {
             "name": "Figma",
             "icon": "https://static.figma.com/app/icon/1/favicon.svg",
             "href": "https://figma.com/kagamirei",
-            "caption": "@kagamirei",
+            "caption": "kagamirei",
             "content": ""
         },
         "dri": {
             "name": "Dribbble",
             "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://dribbble.com&size=40",
             "href": "https://dribbble.com/reiify",
-            "caption": "@reiify",
+            "caption": "reiify",
             "content": ""
         },
         "vk": {
             "name": "VKontakte",
             "icon": "https://vk.com/favicon.ico",
             "href": "https://vk.com/kagamirei",
-            "caption": "@kagamirei",
+            "caption": "kagamirei",
             "content": ""
         },
         "tt": {
             "name": "Tiktok",
             "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://tiktok.com&size=40",
             "href": "https://tiktok.com/rei.ify",
-            "caption": "@rei.ify",
+            "caption": "rei.ify",
             "content": ""
         },
         "x": {
             "name": "X",
             "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://x.com&size=40",
             "href": "https://x.com/kagamiify",
-            "caption": "@kagamiify",
+            "caption": "kagamiify",
             "content": ""
         },
         "pin": {
             "name": "Pinterest",
             "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://pinterest.jp&size=40",
             "href": "https://pinterest.jp/reiify",
-            "caption": "@reiify",
+            "caption": "reiify",
             "content": ""
         }
     },
