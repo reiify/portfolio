@@ -1,3 +1,4 @@
+@media (min-width: 200px) and (max-width: 1023px) {
 .wrapper {
     flex-direction: column;
     padding: 16px;
@@ -21,4 +22,5 @@
 
 .right {
     max-width: 100% !important;
+}
 }
