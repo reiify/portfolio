@@ -19,10 +19,7 @@
         <section class="projects section">
             <W_Title :title="$t('section.my_projects')" />
             <div class="projects__widgets widgets">
-                <W_Link title="ig" />
-                <W_Link title="ig" />
-                <W_Link title="ig" />
-                <W_Link title="ig" />
+                <W_Link title="project" />
             </div>
         </section>
 
