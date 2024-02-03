@@ -167,7 +167,7 @@
             "icon": "https://dummyjson-shop-krei.vercel.app/vite.svg",
             "href": "https://dummyjson-shop-krei.vercel.app",
             "caption": "https://dummyjson-shop.vercel.app",
-            "content": "src/images/project.png"
+            "content": "../../images/project.png"
         }
     },
 
