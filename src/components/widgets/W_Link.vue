@@ -8,7 +8,8 @@
                     <p>{{ $t(`links.${[title]}.caption`)}}</p>
                 </div>
             </div>
-            <img :src="$t(`links.${[title]}.content`)" alt="content" v-if="$t(`links.${[title]}.content`)" class="right-content">
+            <img src="@/assets/images/project.png" alt="content" v-if="[title] == 'project'" class="right-content">
+            <img src="https://creatorspace.imgix.net/sites/ogimages/aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvbWRuLXNvY2lhbC1zaGFyZS5jZDZjNGE1YS5wbmc=.png?width=600&height=600" alt="content" v-if="[title] == 'js'" class="right-content">
         </div>
     </a>
 </template>
