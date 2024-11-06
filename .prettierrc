@@ -1,0 +1,15 @@
+{
+	"printWidth": 120,
+	"tabWidth": 2,
+	"useTabs": true,
+	"semi": true,
+	"jsxSingleQuote": true,
+	"trailingComma": "all",
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"singleAttributePerLine": true,
+	"singleQuote": false,
+	"plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
+	"tailwindAttributes": ["cn", "cva", "clsx", "className"],
+	"tailwindFunctions": ["cn", "cva", "clsx"]
+}
