@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import * as React from "react";
 
 const buttonVariants = cva(
-	"min-size-8 inline-flex items-center justify-center gap-2 whitespace-nowrap border text-sm font-semibold transition-colors focus:outline-none focus-visible:ring focus-visible:ring-ring focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+	"min-size-8 inline-flex items-center justify-center gap-2 whitespace-nowrap border text-sm font-semibold transition-colors focus:outline-none focus-visible:ring focus-visible:ring-ring focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
 	{
 		variants: {
 			variant: {

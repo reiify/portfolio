@@ -6,6 +6,7 @@ import Nav from "@/app/ui/nav";
 import { useEffect, useState } from "react";
 import i18n, { useI18n } from "../i18n";
 import "./globals.css";
+import Template from "./template";
 
 export default function RootLayout({
 	children,
@@ -39,7 +40,9 @@ export default function RootLayout({
 					<Header className='mb-4' />
 					{isLargeScreen && <Nav />}
 				</nav>
-				<main className='flex h-dvh w-full flex-wrap gap-3 rounded-3xl bg-secondary p-3 md:h-full'>{children}</main>
+				<main className='flex h-dvh w-full flex-wrap gap-3 rounded-3xl bg-secondary p-3 md:h-full'>
+					<Template>{children}</Template>
+				</main>
 				{!isLargeScreen && <Nav />}
 			</body>
 		</html>
