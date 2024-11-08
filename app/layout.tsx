@@ -38,12 +38,12 @@ export default function RootLayout({
 
 	return (
 		<html>
-			<body className={`${inter.className} flex h-dvh flex-col gap-4 p-4 antialiased md:flex-row`}>
-				<nav>
-					<Header className='mb-4' />
+			<body className={`${inter.className} flex h-dvh flex-col gap-4 p-2 antialiased md:flex-row md:p-4`}>
+				<nav className='flex flex-col gap-4'>
+					<Header className='mt-8 md:mt-0' />
 					{isLargeScreen && <Nav />}
 				</nav>
-				<main className='flex h-dvh w-full flex-wrap gap-3 rounded-3xl bg-secondary p-3 md:h-full'>
+				<main className='flex h-dvh w-full flex-wrap gap-3 overflow-y-auto rounded-3xl bg-secondary p-3 md:h-full'>
 					<Template>{children}</Template>
 				</main>
 				{!isLargeScreen && <Nav />}
