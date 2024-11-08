@@ -9,6 +9,21 @@ const en = {
 		name: "Abdulatif Ahmadov",
 		job: "Designer, Web Developer",
 	},
+	projects: {
+		portfolio: {
+			title: "Portfolio",
+			description: "My personal portfolio website.",
+		},
+		nextjsDashboard: {
+			title: "NextJS Dashboard",
+			description: "A dashboard template for NextJS.",
+		},
+	},
+	tags: {
+		code: "Develop",
+		design: "Design",
+		edu: "Educational",
+	},
 };
 
 export default en;

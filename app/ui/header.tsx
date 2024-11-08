@@ -1,6 +1,5 @@
 "use client";
 
-import avatar from "@/app/avatar.jpg";
 import { Avatar, AvatarFallback, AvatarImage } from "@/app/ui/avatar";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -29,7 +28,7 @@ const Header: React.FC<Props> = ({ className }) => {
 				selectable={false}
 				size={isLargeScreen ? "xl" : "md"}
 			>
-				<AvatarImage src={avatar.src} />
+				<AvatarImage src='/avatar.jpg' />
 				<AvatarFallback>AA</AvatarFallback>
 			</Avatar>
 			<div className='flex flex-col gap-0.5 text-nowrap'>

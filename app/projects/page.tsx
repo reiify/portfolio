@@ -1,9 +1,12 @@
 "use client";
 
-import { useTranslation } from "react-i18next";
+import Project from "@/app/ui/project";
+import { motion } from "framer-motion";
 
 export default function Page() {
-	const { t } = useTranslation();
-
-	return <h1>{t("route.projects")}</h1>;
+	return (
+		<motion.section className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4'>
+			<Project />
+		</motion.section>
+	);
 }

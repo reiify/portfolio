@@ -6,7 +6,7 @@ import { clsx } from "clsx";
 import { motion } from "framer-motion";
 import { BriefcaseBusiness, House, Phone, Settings } from "lucide-react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -37,7 +37,6 @@ export default function Nav() {
 	const [activeIndex, setActiveIndex] = useState<number>(0);
 	const { t } = useTranslation();
 	const pathname = usePathname();
-	const router = useRouter();
 
 	useEffect(() => {
 		const currentIndex = links.findIndex((link) => link.href === pathname);
@@ -57,17 +56,6 @@ export default function Nav() {
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
-
-	useEffect(() => {
-		localStorage.setItem("lastVisitedPage", pathname);
-	}, [pathname]);
-
-	useEffect(() => {
-		const lastVisitedPage = localStorage.getItem("lastVisitedPage");
-		if (lastVisitedPage && typeof window !== "undefined") {
-			router.push(lastVisitedPage);
-		}
-	}, [router]);
 
 	return (
 		<motion.nav

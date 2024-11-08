@@ -1,6 +1,6 @@
 {
 	"name": "portfolio",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"private": true,
 	"scripts": {
 		"dev": "cross-env NODE_OPTIONS='--inspect' next dev --turbo",
@@ -21,6 +21,7 @@
 		"react": "19.0.0-rc-69d4b800-20241021",
 		"react-dom": "19.0.0-rc-69d4b800-20241021",
 		"react-i18next": "^15.1.0",
+		"simple-icons": "^13.16.0",
 		"tailwind-merge": "^2.5.4"
 	},
 	"devDependencies": {

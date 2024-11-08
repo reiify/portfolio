@@ -1,12 +1,9 @@
 "use client";
 
+import { LayoutProps } from "@/lib/interface";
 import { motion } from "framer-motion";
 
-export default function Template({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+export default function Template({ children }: LayoutProps) {
 	return (
 		<motion.section
 			initial={{ opacity: 0, y: 20 }}

@@ -7,6 +7,9 @@ const nextConfig = {
 	httpAgentOptions: {
 		keepAlive: true,
 	},
+	compiler: {
+		removeConsole: process.env.NODE_ENV === "production",
+	},
 
 	async rewrites() {
 		return [

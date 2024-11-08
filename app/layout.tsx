@@ -14,29 +14,32 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+	const [isInitialized, setIsInitialized] = useState<boolean>(false);
 
 	useEffect(() => {
-		const handleResize = () => {
-			setIsLargeScreen(window.innerWidth >= 768);
-		};
+		const mediaQuery = window.matchMedia("(min-width: 768px)");
 
-		handleResize();
-		window.addEventListener("resize", handleResize);
-		return () => window.removeEventListener("resize", handleResize);
+		setIsLargeScreen(mediaQuery.matches);
+		setIsInitialized(true);
+
+		const handleResize = (event: MediaQueryListEvent) => setIsLargeScreen(event.matches);
+
+		mediaQuery.addEventListener("change", handleResize);
+		return () => mediaQuery.removeEventListener("change", handleResize);
 	}, []);
 
 	useEffect(() => {
-		if (!i18n.isInitialized) {
-			i18n.init();
-		}
+		if (!i18n.isInitialized) i18n.init();
 	}, []);
 
 	useI18n();
 
+	if (!isInitialized) return null;
+
 	return (
 		<html>
 			<body className={`${inter.className} flex h-dvh flex-col gap-4 p-4 antialiased md:flex-row`}>
-				<nav className='w-1/6'>
+				<nav>
 					<Header className='mb-4' />
 					{isLargeScreen && <Nav />}
 				</nav>
