@@ -1,48 +1,160 @@
+import Modal from "@/app/ui//modal";
 import { Avatar, AvatarImage } from "@/app/ui/avatar";
+import { Badge } from "@/app/ui/badge";
 import projects from "@/lib/projects";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
+const MotionImage = motion.create(Image);
+
+const projectVariants = {
+	hidden: { opacity: 0, scale: 0.8 },
+	show: {
+		opacity: 1,
+		scale: 1,
+		transition: {
+			type: "spring",
+			stiffness: 300,
+			damping: 30,
+		},
+	},
+};
 
 export default function Project() {
 	const { t } = useTranslation();
+	const [selectedId, setSelectedId] = useState<string | null>(null);
+
 	return (
 		<>
-			{projects.map((project, index) => {
-				return (
-					<motion.div
-						key={index}
-						layoutId={`project-${index}`}
-						transition={{
-							type: "spring",
-							duration: 0.4,
-						}}
-						whileTap={{
-							scale: 0.98,
-						}}
-						className='flex flex-col items-start gap-3 rounded-xl border p-3'
+			{projects.map((project) => (
+				<motion.div
+					key={project.id}
+					layoutId={`project-${project.id}`}
+					variants={projectVariants}
+					whileTap={{ scale: 0.98 }}
+					className='flex cursor-pointer flex-col items-start gap-3 rounded-xl bg-card/60 p-3'
+					onClick={() => setSelectedId(project.id.toString())}
+				>
+					<Avatar
+						size='sm'
+						rounded='rounded'
+						selectable={false}
+						layoutId={`avatar-${project.id}`}
 					>
-						<Avatar
-							size='sm'
-							rounded='rounded'
-							selectable={false}
-						>
-							<AvatarImage src={project.icon} />
-						</Avatar>
+						<AvatarImage src={project.icon} />
+					</Avatar>
 
-						<p className='p-md line-clamp-1 overflow-visible font-medium'>{t(project.title)}</p>
-						<p className='p-sm line-clamp-2 overflow-visible text-muted-foreground'>{t(project.description ?? "")}</p>
+					<motion.p
+						layoutId={`title-${project.id}`}
+						className='p-md line-clamp-1 overflow-visible font-medium'
+					>
+						{t(project.title)}
+					</motion.p>
+					<motion.p
+						layoutId={`description-${project.id}`}
+						className='p-sm line-clamp-2 overflow-visible text-muted-foreground'
+					>
+						{t(project.description ?? "")}
+					</motion.p>
 
-						<Image
-							src={project.image ?? ""}
-							alt='project open graph image'
-							width={1920}
-							height={1080}
-							className='aspect-video select-none rounded-md border'
-						/>
-					</motion.div>
-				);
-			})}
+					<MotionImage
+						src={project.image ?? ""}
+						alt='project open graph image'
+						width={1920}
+						height={1080}
+						className='aspect-video w-full select-none rounded-md border'
+						layoutId={`image-${project.id}`}
+					/>
+				</motion.div>
+			))}
+
+			<AnimatePresence>
+				{selectedId && (
+					<Modal
+						isVisible={true}
+						onClose={() => setSelectedId(null)}
+						layoutId={`project-${selectedId}`}
+					>
+						{projects.map(
+							(project) =>
+								project.id.toString() === selectedId && (
+									<motion.div
+										key={project.id}
+										className='flex flex-col items-start gap-5 p-3'
+									>
+										<motion.div className='flex flex-row items-center gap-3'>
+											<Avatar
+												size='md'
+												rounded='rounded'
+												selectable={false}
+												layoutId={`avatar-${project.id}`}
+											>
+												<AvatarImage src={project.icon} />
+											</Avatar>
+
+											<motion.div className='flex flex-col gap-1'>
+												<motion.p
+													layoutId={`title-${project.id}`}
+													className='p-md line-clamp-1 overflow-visible font-medium'
+												>
+													{t(project.title)}
+												</motion.p>
+												<motion.p
+													layoutId={`description-${project.id}`}
+													className='p-sm line-clamp-2 overflow-visible text-muted-foreground'
+												>
+													{t(project.description ?? "")}
+												</motion.p>
+											</motion.div>
+										</motion.div>
+										<motion.div className='flex flex-row flex-wrap gap-2'>
+											{project.tags?.map((tag) => {
+												const TagIcon = tag.icon;
+												return (
+													<Badge
+														key={tag.name}
+														variant='secondary'
+														className='[&_svg]:size-5'
+													>
+														<TagIcon />
+														{t(tag.name)}
+													</Badge>
+												);
+											})}
+										</motion.div>
+										{/*
+											<motion.div className='flex flex-row flex-wrap gap-2'>
+											{project.stack?.map((stack) => {
+												const StackIcon = stack.icon;
+												return (
+													<Badge
+														key={stack.name}
+														variant='secondary'
+														className='[&_svg]:size-5'
+													>
+														<StackIcon />
+														{t(stack.name)}
+													</Badge>
+												);
+											})}
+											</motion.div>
+										*/}
+										<MotionImage
+											src={project.image ?? ""}
+											alt='project open graph image'
+											width={1920}
+											height={1080}
+											className='aspect-video w-full select-none rounded-md border'
+											layoutId={`image-${project.id}`}
+										/>
+									</motion.div>
+								),
+						)}
+					</Modal>
+				)}
+			</AnimatePresence>
 		</>
 	);
 }

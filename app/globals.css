@@ -3,52 +3,52 @@
 @tailwind utilities;
 
 :root {
-	--background: #ffffff;
-	--foreground: #0a0a0a;
+	--background: 255, 255, 255;
+	--foreground: 10, 10, 10;
 
-	--card: #ffffff;
-	--card-foreground: #0a0a0a;
+	--card: 255, 255, 255;
+	--card-foreground: 10, 10, 10;
 
-	--primary: #171717;
-	--primary-foreground: #fafafa;
+	--primary: 23, 23, 23;
+	--primary-foreground: 250, 250, 250;
 
-	--secondary: #f5f5f5;
-	--secondary-foreground: #171717;
+	--secondary: 245, 245, 245;
+	--secondary-foreground: 23, 23, 23;
 
-	--muted: #f5f5f5;
-	--muted-foreground: #737373;
+	--muted: 245, 245, 245;
+	--muted-foreground: 115, 115, 115;
 
-	--accent: #f5f5f5;
-	--accent-foreground: #171717;
+	--accent: 245, 245, 245;
+	--accent-foreground: 23, 23, 23;
 
-	--border: #e5e5e5;
-	--ring: #0a0a0a;
+	--border: 229, 229, 229;
+	--ring: 10, 10, 10;
 
 	--radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background: #0a0a0a;
-		--foreground: #fafafa;
+		--background: 10, 10, 10;
+		--foreground: 250, 250, 250;
 
-		--card: #0a0a0a;
-		--card-foreground: #fafafa;
+		--card: 10, 10, 10;
+		--card-foreground: 250, 250, 250;
 
-		--primary: #fafafa;
-		--primary-foreground: #171717;
+		--primary: 250, 250, 250;
+		--primary-foreground: 23, 23, 23;
 
-		--secondary: #262626;
-		--secondary-foreground: #fafafa;
+		--secondary: 38, 38, 38;
+		--secondary-foreground: 250, 250, 250;
 
-		--muted: #262626;
-		--muted-foreground: #a3a3a3;
+		--muted: 38, 38, 38;
+		--muted-foreground: 163, 163, 163;
 
-		--accent: #262626;
-		--accent-foreground: #fafafa;
+		--accent: 38, 38, 38;
+		--accent-foreground: 250, 250, 250;
 
-		--border: #3f3f46;
-		--ring: #d4d4d4;
+		--border: 63, 63, 70;
+		--ring: 212, 212, 212;
 	}
 }
 
@@ -87,7 +87,15 @@
 	.text-balance {
 		text-wrap: balance;
 	}
+	.rounded-none {
+		border-radius: none;
+	}
+	.rounded-full {
+		border-radius: 9999px;
+	}
+}
 
+@layer components {
 	.select-none {
 		-webkit-user-drag: none;
 		-webkit-user-select: none;
@@ -95,14 +103,6 @@
 		-moz-user-select: none;
 		pointer-events: none;
 	}
-
-	.rounded-none {
-		border-radius: none;
-	}
-	.rounded-full {
-		border-radius: 9999px;
-	}
-
 	.p-lg {
 		@apply text-lg;
 	}

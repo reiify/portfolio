@@ -3,6 +3,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
+import { motion } from "framer-motion";
 
 const avatarVariants = cva("flex shrink-0 items-center justify-center overflow-hidden bg-muted", {
 	variants: {
@@ -78,4 +79,6 @@ const AvatarFallback = React.forwardRef<
 ));
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
-export { Avatar, AvatarFallback, AvatarImage, avatarVariants };
+const MotionAvatar = motion.create(Avatar);
+
+export { MotionAvatar as Avatar, AvatarFallback, AvatarImage, avatarVariants };

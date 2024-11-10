@@ -6,29 +6,29 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				background: "var(--background)",
-				foreground: "var(--foreground)",
-				border: "var(--border)",
-				ring: "var(--ring)",
+				background: "rgba(var(--background))",
+				foreground: "rgba(var(--foreground))",
+				border: "rgba(var(--border))",
+				ring: "rgba(var(--ring))",
 				primary: {
-					DEFAULT: "var(--primary)",
-					foreground: "var(--primary-foreground)",
+					DEFAULT: "rgba(var(--primary))",
+					foreground: "rgba(var(--primary-foreground))",
 				},
 				secondary: {
-					DEFAULT: "var(--secondary)",
-					foreground: "var(--secondary-foreground)",
+					DEFAULT: "rgba(var(--secondary))",
+					foreground: "rgba(var(--secondary-foreground))",
 				},
 				accent: {
-					DEFAULT: "var(--accent)",
-					foreground: "var(--accent-foreground)",
+					DEFAULT: "rgba(var(--accent))",
+					foreground: "rgba(var(--accent-foreground))",
 				},
 				card: {
-					DEFAULT: "var(--card)",
-					foreground: "var(--card-foreground)",
+					DEFAULT: "rgba(var(--card))",
+					foreground: "rgba(var(--card-foreground))",
 				},
 				muted: {
-					DEFAULT: "var(--muted)",
-					foreground: "var(--muted-foreground)",
+					DEFAULT: "rgba(var(--muted))",
+					foreground: "rgba(var(--muted-foreground))",
 				},
 			},
 		},

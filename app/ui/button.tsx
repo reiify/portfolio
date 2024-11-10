@@ -10,9 +10,9 @@ const buttonVariants = cva(
 		variants: {
 			variant: {
 				primary:
-					"supports-[hover]:bg-primary/90 support-[active]:bg-primary/90 border-transparent bg-primary text-primary-foreground",
+					"support-[active]:bg-primary/90 border-transparent bg-primary text-primary-foreground supports-[hover]:bg-primary/90",
 				secondary:
-					"supports-[hover]:bg-secondary/80 supports-[active]:bg-secondary/80 border-transparent bg-secondary text-secondary-foreground",
+					"border-transparent bg-secondary text-secondary-foreground supports-[active]:bg-secondary/80 supports-[hover]:bg-secondary/80",
 				outline:
 					"border-border supports-[active]:bg-accent supports-[hover]:bg-accent supports-[active]:text-accent-foreground supports-[hover]:text-accent-foreground",
 				ghost:

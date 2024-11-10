@@ -1,6 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
 export interface LayoutProps {
 	children: React.ReactNode;
+}
+
+export interface ModalProps {
+	isVisible: boolean;
+	children?: React.ReactNode;
+	className?: string;
+	onClose: () => void;
+	layoutId?: string | undefined;
 }
 
 export interface Project {
