@@ -8,7 +8,7 @@ const projects: Project[] = [
 		description: "projects.portfolio.description",
 		icon: "/icons/1.svg",
 		image: "/og/2.png",
-		link: "https://portoflio-krei.vercel.app",
+		link: "https://portfolio-krei.vercel.app",
 		tags: [tags.code, tags.design],
 		stack: [tags.figma, tags.next, tags.tailwind],
 	},
