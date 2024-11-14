@@ -24,6 +24,10 @@ const en = {
 		design: "Design",
 		edu: "Educational",
 	},
+	btns: {
+		visit: "Visit",
+		close: "Close",
+	},
 };
 
 export default en;

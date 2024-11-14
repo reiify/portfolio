@@ -24,6 +24,10 @@ const ru = {
 		design: "Дизайн",
 		edu: "Учебный",
 	},
+	btns: {
+		visit: "Посетить",
+		close: "Закрыть",
+	},
 };
 
 export default ru;

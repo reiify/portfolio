@@ -4,8 +4,10 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import { createPortal } from "react-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Modal({ isVisible, children, className, onClose, layoutId }: ModalProps) {
+	const { t } = useTranslation();
 	return createPortal(
 		<AnimatePresence>
 			{layoutId && isVisible && (
@@ -26,14 +28,18 @@ export default function Modal({ isVisible, children, className, onClose, layoutI
 								variant='ghost'
 								onClick={() => onClose()}
 								className='absolute right-3 top-3 text-xs'
+								whileTap={{
+									scale: 0.98,
+								}}
 							>
+								<span className='sr-only'>{t("btns.close")}</span>
 								<X />
 							</Button>
 							{children}
 						</motion.div>
 					</motion.div>
 					<div
-						className='fixed inset-0 bg-black/20'
+						className='fixed inset-0 bg-black/60'
 						onClick={() => onClose()}
 					/>
 				</>

@@ -3,9 +3,12 @@ import { Avatar, AvatarImage } from "@/app/ui/avatar";
 import { Badge } from "@/app/ui/badge";
 import projects from "@/lib/projects";
 import { AnimatePresence, motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Button } from "./button";
 
 const MotionImage = motion.create(Image);
 
@@ -39,7 +42,7 @@ export default function Project() {
 				>
 					<Avatar
 						size='sm'
-						rounded='rounded'
+						rounded='full'
 						selectable={false}
 						layoutId={`avatar-${project.id}`}
 					>
@@ -87,7 +90,7 @@ export default function Project() {
 										<motion.div className='flex flex-row items-center gap-3'>
 											<Avatar
 												size='md'
-												rounded='rounded'
+												rounded='full'
 												selectable={false}
 												layoutId={`avatar-${project.id}`}
 											>
@@ -109,7 +112,21 @@ export default function Project() {
 												</motion.p>
 											</motion.div>
 										</motion.div>
-										<motion.div className='flex flex-row flex-wrap gap-2'>
+										<motion.div
+											className='flex flex-row flex-wrap gap-2'
+											initial={{
+												y: 40,
+												opacity: 0,
+											}}
+											animate={{
+												y: 0,
+												opacity: 1,
+												transition: {
+													delay: 0.2,
+													duration: 0.2,
+												},
+											}}
+										>
 											{project.tags?.map((tag) => {
 												const TagIcon = tag.icon;
 												return (
@@ -149,6 +166,35 @@ export default function Project() {
 											className='aspect-video w-full select-none rounded-md border'
 											layoutId={`image-${project.id}`}
 										/>
+
+										<div className='flex w-full place-content-end gap-3'>
+											<Button
+												asChild
+												initial={{
+													y: 40,
+													opacity: 0,
+												}}
+												animate={{
+													y: 0,
+													opacity: 1,
+													transition: {
+														delay: 0.2,
+														duration: 0.2,
+													},
+												}}
+												whileTap={{
+													scale: 0.98,
+												}}
+											>
+												<Link
+													href={project.link as string}
+													target='_blank'
+												>
+													{t("btns.visit")}
+													<ExternalLink size={16} />
+												</Link>
+											</Button>
+										</div>
 									</motion.div>
 								),
 						)}

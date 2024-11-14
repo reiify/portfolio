@@ -24,6 +24,10 @@ const uz = {
 		design: "Dizayn",
 		edu: "Ta'limiy",
 	},
+	btns: {
+		visit: "Ko'rish",
+		close: "Yopish",
+	},
 };
 
 export default uz;
