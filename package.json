@@ -27,8 +27,8 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20",
-		"@types/react": "types-react@19.0.0-rc.1",
-		"@types/react-dom": "types-react-dom@19.0.0-rc.1",
+		"@types/react": "npm:types-react@19.0.0-rc.1",
+		"@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
 		"cross-env": "^7.0.3",
 		"eslint": "^8",
 		"eslint-config-next": "15.0.3",
@@ -40,7 +40,7 @@
 		"typescript": "^5"
 	},
 	"overrides": {
-		"@types/react": "types-react@19.0.0-rc.1",
-		"@types/react-dom": "types-react-dom@19.0.0-rc.1"
+		"@types/react": "npm:types-react@19.0.0-rc.1",
+		"@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
 	}
 }
